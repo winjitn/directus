@@ -667,6 +667,7 @@ export class ItemsService<Item extends AnyItem = AnyItem> implements AbstractSer
 	 * Read/treat collection as singleton
 	 */
 	async readSingleton(query: Query, opts?: QueryOptions): Promise<Partial<Item>> {
+		console.log('abcccccccc')
 		query = clone(query);
 
 		query.limit = 1;
